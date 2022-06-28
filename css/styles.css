@@ -1,0 +1,17 @@
+:root {
+--primary-text-color: #757575;
+--title-text-color: #212121;
+--accent-color: #2196F3;
+--primary-bg-color: #FFFFFF
+}
+body {
+    background-color: E5E5E5;
+    color: var(--primary-text-color)
+    .font-family:roboto
+}
+ul {
+    list-style: none;
+}
+.header-link-current {
+    color: var(--accent-color);
+}
