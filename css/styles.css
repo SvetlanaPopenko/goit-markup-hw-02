@@ -1,92 +1,120 @@
-/* font-family: 'Raleway',
-sans-serif; */
 :root {
-  --primary-text-color: #757575;
+  --main-font:'Roboto', sans-serif;
+  --secondary-font:'Raleway', sans-serif;
+  --main-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --primary-white-color: #ffffff;
-  --main-bg-color: #e5e5e5;
+  --main-white-color: #ffffff;
   --secondary-bg-color: #2f303a;
   --third-bg-color: #f5f4fa;
+  --transpered-color: rgba(255, 255, 255, 0.6);
+  --logo-color: #000000;
+
 }
 body {
-font-family: 'Roboto', sans-serif;
-  color: var(--primary-text-color);
-  background-color: var(--main-bg-color);
+  font-family: var(--main-font);
+  color: var(--main-text-color);
+  }
+
+/* Reset styles */
+.link {
+    text-decoration: none;
+    color: currentColor;
 }
-
-/* Common styles */
-
+.list {
+    list-style: none;
+}
 /* Header section*/
-.header-list {
-  list-style: none;
-}
-.header-mail {
-   color: var(--primary-text-color); 
-}
-.header-phone {
-    color: var(--primary-text-color);
-}
-.header-phone:hover, 
-.header-mail:hover,
-.header-phone:focus,
-.header-mail:focus {
-    color: var(--accent-color);
-}
 
-.header-link-current {
+.logo {
+  font-family:var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+.logo-header {
+  color: var(--logo-color);
+}
+.header-link,
+.header-mail,
+.header-phone {
+  font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.header-link {
+  color: var(--title-text-color);
+}
+.header-link-current {
+  color: var(--accent-color);
+ }
+
+.header-link:hover,
+.header-link:focus, 
+.header-phone:hover,
+.header-phone:focus,
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--accent-color);
+}
+
+
 /* Main-section */
+.hero {
+  background-color: var(--secondary-bg-color);
+
+}
 .hero-title {
-  color: var(--primary-white-color);
-  font-family: "Roboto";
-  font-style: normal;
+  color: var(--main-white-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero {
-  background-color: var(--secondary-bg-color);
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-}
+
 .hero-btn {
-  color: var(--primary-white-color);
+  font-family: inherit;
+  color: var(--main-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
-  width: 200px;
-  height: 50px;
-left: 700px;
-    top: 430px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-color);
 }
 /* Features section */
-.features-list {
-  list-style: none;
-}
 
 .features-subtitle {
   color: var(--title-text-color);
+  font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+}
+.features-desc {
+  font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 /* About section */
-.about-list {
-  list-style: none;
-}
-.about {
-  background-color: var(--main-bg-color);
-}
+
 .section-title {
   color: var(--title-text-color);
-}
+  font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 /* Team section */
-.team-list {
-  list-style: none;
-}
 .team {
   background-color: var(--third-bg-color);
 }
@@ -94,19 +122,36 @@ left: 700px;
   color: var(--title-text-color);
 }
 .team-item {
-  background-color: var(--primary-white-color);
+  background-color: var(--main-white-color);
 }
-
+/* footer */
+.logo-footer {
+  color: var(--main-white-color);
+}
+.footer {
+  background-color: var(--secondary-bg-color);
+}
+.footer-link {
+  color: var(--main-white-color);
+}
+.footer-mail {
+  color: var(--transpered-color);
+}
+.footer-phone {
+  color: var(--transpered-color);
+}
 /* Portfolio */
-.main-list {
-    list-style: none;
+
+.main-button {
+  color: var(--title-text-color);
+  background-color: var(--third-bg-color);
+  cursor: pointer;
 }
-.main-btn {
-    cursor: pointer;
+.main-button:hover,
+.main-button:focus {
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
 }
 .main-service {
-    color: var(--title-text-color);
-}
-.main-items {
-    list-style: none;
+  color: var(--title-text-color);
 }
