@@ -14,16 +14,16 @@
 body {
   font-family: var(--main-font);
   color: var(--main-text-color);
+  letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 /* Reset styles */
 .link {
   text-decoration: none;
   color: currentColor;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-}
+  }
 
 .list {
   list-style: none;
@@ -35,7 +35,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 .logo-header {
@@ -45,7 +44,6 @@ body {
 .header-mail,
 .header-phone {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -101,16 +99,12 @@ body {
 .features-subtitle {
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .features-desc {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-}
+  }
 /* About section */
 
 .section-title {
@@ -118,8 +112,7 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-}
+  }
 /* Team section */
 .team {
   background-color: var(--third-bg-color);
@@ -129,15 +122,13 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 .team-desc {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
-}
+  }
 
 .team-item {
   background-color: var(--main-white-color);
@@ -183,12 +174,11 @@ body {
 .main-service {
   color: var(--title-text-color);
   font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-      color: var(--title-text-color)
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
 }
 .main-direction {
   font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
+  line-height: 1.88;
   }
