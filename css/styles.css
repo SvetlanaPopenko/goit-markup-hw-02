@@ -101,6 +101,7 @@ body {
 
 .features-subtitle {
   color: var(--title-text-color);
+  font-size: inherit;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
